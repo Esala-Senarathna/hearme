@@ -1,5 +1,5 @@
-let images = ["assets/phone2.png", "assets/phone1.png"]; // Add your images paths here
-let texts = ["Interactive User Interface", "Child Friendly Games"]; // Add your texts here
+let images = ["assets/phone2.png",  "assets/phone3.png", "assets/phone4.png", "assets/phone5.png", "assets/phone1.png",]; // Add your images paths here
+let texts = ["Interactive User Interface", "Pronounciation Correction","Improve Vocabulary","Explorative Learning","Child Friendly Games"]; // Add your texts here
 
 let currentImageIndex = 0;
 let currentTextIndex = 0;

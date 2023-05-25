@@ -642,6 +642,7 @@ iframe {
   font-weight: bold;
   padding-right: 10em;
   z-index: 2; 
+  color: #040d47;
 }
 
 .image-slider {
@@ -672,6 +673,8 @@ iframe {
   padding: 2em;
   background: #f9f9f9; /* Adjust as needed */
   text-align: center;
+  padding-left: 20em;
+  padding-right: 20em;
 }
 
 .tech-grid {
