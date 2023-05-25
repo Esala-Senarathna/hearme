@@ -631,11 +631,9 @@ iframe {
   width: 200%;
 }
 
-
-
 #slideshow-image {
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 120%;
   object-fit: cover;
 }
 
@@ -643,6 +641,7 @@ iframe {
   width: 140%;  /* Increase this value to give more space to the text slider */
   font-weight: bold;
   padding-right: 10em;
+  z-index: 2; 
 }
 
 .image-slider {
@@ -661,10 +660,35 @@ iframe {
 
 #circle-image {
   position: absolute;
-  padding-top: 45px;
+  padding-top: 105px;
   bottom: -20px;
-  left: -150px;  /* Adjust this value to position the circle image correctly under the phone frame */
-  width: 450px;  /* Adjust width and height according to your circle.png image size */
-  height: 510px;
+  left: -550px;  /* Adjust this value to position the circle image correctly under the phone frame */
+  width: 950px;  /* Adjust width and height according to your circle.png image size */
+  height: 610px;
   z-index: 1;  /* Add this line */
+}
+
+#technologies {
+  padding: 2em;
+  background: #f9f9f9; /* Adjust as needed */
+  text-align: center;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.tech-grid .tech-item:nth-child(6),
+.tech-grid .tech-item:nth-child(7) 
+
+.tech-item {
+  text-align: center;
+}
+
+.tech-item img {
+  width: 100%;
+  height: auto;
 }
