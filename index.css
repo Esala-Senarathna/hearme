@@ -680,19 +680,17 @@ iframe {
 #technologies {
   padding: 2em;
   text-align: center;
-  padding-left: 20em;
-  padding-right: 20em;
+  padding-left: 8em;
+  padding-right: 8em;
 }
 
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr); /* Add this line */
   gap: 2em;
   margin-top: 2em;
 }
-
-.tech-grid .tech-item:nth-child(6),
-.tech-grid .tech-item:nth-child(7) 
 
 .tech-item {
   text-align: center;
@@ -700,7 +698,8 @@ iframe {
 
 .tech-item img {
   width: 100%;
-  height: auto;
+  height: 100%; 
+  object-fit: contain; /* Use contain to avoid cropping */
 }
 
 .content {
