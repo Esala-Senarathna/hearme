@@ -377,7 +377,7 @@ figcaption {
 }
 
 .meth-image {
-  width: 45%;
+  width: 55%;
 }
 .meth-image > img{
   max-width: 450px;
@@ -700,3 +700,80 @@ iframe {
   height: auto;
 }
 
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  max-width: 96%;
+  padding-left: 10em;
+  padding-right: 20em;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.contact-form {
+  flex: 1;
+  margin-right: 50px;
+}
+.contact-form h2 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+.contact-form .input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.contact-form input, .contact-form textarea {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.contact-form textarea {
+  height: 50px;
+}
+.contact-form button {
+  width: 40%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background: #333;
+  color: #fff;
+ 
+  bottom: 0;
+  left: 0;
+}
+.app-download {
+  text-align: center;
+  padding-top: 30px;
+}
+.app-download p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.app-download-button {
+  display: block;
+  width: 200px;
+  height: 80px;
+  margin: 0 auto;
+  background: url('https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png') no-repeat;
+  background-size: cover;
+}
