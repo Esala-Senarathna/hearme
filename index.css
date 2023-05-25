@@ -622,30 +622,30 @@ iframe {
   height: 80vh; /* Adjust height as needed */
   padding-top: 10em;
   padding-bottom: 10em;
-  padding-left: 30em;
-  padding-right: 30em;
+  padding-left: 25%; /* 1/4 of width */
+  padding-right: 25%; /* 1/4 of width */
 }
 
 .content {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 200%;
+  width: 100%; /* Width made to 100% to allow for padding */
+  gap: 20%; /* 1/5 of width as gap between text and image */
 }
 
 #slideshow-image {
-  width: 120%;
-  height: 120%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 .text-slider {
-  width: 240%;  /* Increase this value to give more space to the text slider */
+  width: 150%; /* Increased from 120% to 150% to make text container bigger */
   font-weight: bold;
   font-size: 2.0em;
-  padding-right: 10em;
-  z-index: 2; 
-  color: #040d47;
+  color: red; 
+  z-index: 2;/* Text color changed to red */
 }
 
 .image-slider {
@@ -653,24 +653,25 @@ iframe {
 }
 
 #phone-frame {
-  position: relative;  /* Add this line */
+  position: relative;
   width: 200px;
   height: 400px;
   background: url('assets/phone-frame.png'); 
   background-size: contain;
   background-repeat: no-repeat;
-  z-index: 2;  /* Add this line */
+  z-index: 2;
 }
 
 #circle-image {
   position: absolute;
   padding-top: 105px;
-  bottom: -20px;
-  left: -550px;  /* Adjust this value to position the circle image correctly under the phone frame */
-  width: 950px;  /* Adjust width and height according to your circle.png image size */
+  bottom: -40px;
+  left: -400px;
+  width: 750px;
   height: 610px;
-  z-index: 1;  /* Add this line */
+  z-index: 1;
 }
+
 
 #technologies {
   padding: 2em;
