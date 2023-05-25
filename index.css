@@ -377,14 +377,14 @@ figcaption {
 }
 
 .meth-image {
-  width: 50%;
+  width: 45%;
 }
 .meth-image > img{
   max-width: 450px;
 }
 
 .meth-para {
-  width: 50%;
+  width: 65%;
   text-align: justify;
   font-size: 16px;
   letter-spacing: 0.5px;
