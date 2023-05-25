@@ -613,3 +613,58 @@ iframe {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+#showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Adjust height as needed */
+  padding-top: 10em;
+  padding-bottom: 10em;
+  padding-left: 30em;
+  padding-right: 30em;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200%;
+}
+
+
+
+#slideshow-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-slider {
+  width: 140%;  /* Increase this value to give more space to the text slider */
+  font-weight: bold;
+  padding-right: 10em;
+}
+
+.image-slider {
+  position: relative;
+}
+
+#phone-frame {
+  position: relative;  /* Add this line */
+  width: 200px;
+  height: 400px;
+  background: url('assets/phone-frame.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;  /* Add this line */
+}
+
+#circle-image {
+  position: absolute;
+  padding-top: 45px;
+  bottom: -20px;
+  left: -150px;  /* Adjust this value to position the circle image correctly under the phone frame */
+  width: 450px;  /* Adjust width and height according to your circle.png image size */
+  height: 510px;
+  z-index: 1;  /* Add this line */
+}
