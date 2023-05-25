@@ -402,6 +402,7 @@ figcaption {
 
 .team-section {
   display: flex;
+  margin-top: 2em;
   padding-left: 5%;
   padding-right: 5%;
   align-items: center;
@@ -619,9 +620,9 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; /* Adjust height as needed */
+  height: 78vh; /* Adjust height as needed */
   padding-top: 10em;
-  padding-bottom: 17em;
+  padding-bottom: 4em;
   padding-left: 30em;
   padding-right: 30em;
   margin: auto;
@@ -680,8 +681,9 @@ iframe {
 #technologies {
   padding: 2em;
   text-align: center;
-  padding-left: 8em;
-  padding-right: 8em;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-bottom: 4em;
 }
 
 .tech-grid {
