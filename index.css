@@ -640,8 +640,9 @@ iframe {
 }
 
 .text-slider {
-  width: 140%;  /* Increase this value to give more space to the text slider */
+  width: 240%;  /* Increase this value to give more space to the text slider */
   font-weight: bold;
+  font-size: 2.0em;
   padding-right: 10em;
   z-index: 2; 
   color: #040d47;
