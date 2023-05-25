@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HearMe</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="navbar">
+      <nav id="navmenu" class="navbar__menu">
+        <div class="nav-img">
+          <img
+            src="assets/logo.jpeg"
+            class="d-inline-block align-top"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- <span>HearMe</span><br> -->
+
+        <div class="nav_links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="">Home</a></li>
+
+            <li><a href="#literature-survey">Literature Survey</a></li>
+            <li><a href="#research_objectives">Research Objectives</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#presentations">Presentations</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <!-- Home -->
+      <section id="home">
+        <div class="container">
+          <div class="hero-cta">
+            <h1>
+              Visual Based Learning Tool <br />for Hearing-Impaired Children
+            </h1>
+            <a class="btn btn-outline-light" type="button" href="#project-scope"
+              ><span class="btn-text">Learn More</span
+              ><span class="fas fa-chevron-right btn-icon"></span
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- >>>>>Project scope<<<<<<  -->
+
+      <section id="Project_scope" class="main_section">
+        <div id="literature-survey" class="sub-section">
+          <span class="sub-title">Literature Survey</span>
+          <div class="survey-row">
+            <div class="survey-top">
+              <div class="section-figure">
+                <img
+                  src="assets/stat.jpg"
+                  style="width: 687px"
+                  alt="Hearing Impairemnet"
+                />
+                <figcaption>Hearing Loss in Children</figcaption>
+                <p></p>
+              </div>
+              <div class="survey-top-para">
+                According to the WHO, approximately 466 million people worldwide
+                have disabling hearing loss, which represents about 6.1% of the
+                world population. [1] Among those people, most of the people
+                with hearing impairments can hear after getting an implant or
+                after starting to use a hearing aid. But those people still tend
+                to use sign language for communication because they do not have
+                an improved vocabulary. Vocabulary development is mostly
+                affected in between the age of 3 to 6 years. [2] Which is why a
+                customized tool for hearing impaired people who are recovering
+                is needed. <br />
+                The aim of this research is to develop a learning tool to
+                provide the ability to use visual based materials from the
+                surrounding environment to improve vocabulary in early ages.
+                CEHIC worked in collaboration with us the entire period of the
+                research and the tool is developed under their supervision.
+                Furthermore, this tool has four main areas of development. It
+                will initially discover the level of the student each day when
+                they try to use the application. Then the student can explore
+                what’s around the child through the camera, which enables
+                seamless and effective learning experience for the child to
+                interact with his surrounding environment and learn based on
+                them, after that it generate meaningful sentences and phrases
+                from the objects that observed previously and the words they
+                have learnt. Finally, lip reading training which basically
+                involves with training lip movements for the alphabet and that
+                gives visual feedback while monitoring the mouth movements of
+                the child.
+              </div>
+            </div>
+            <div id="project-scope-right" class="survey-bottom">
+              <div class="references">
+                <span class="ref-title">References</span>
+                <ol class="ref-list">
+                  <li>
+                    World Health Organization, “Deafness and Hearing Loss”,
+                    Available:
+                    https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss
+                  </li>
+                  <li>
+                    Doaa Shawky and Ashraf Badawi, “A reinforcement
+                    Learning-Based Adaptive Learning System”, Center for
+                    learning technologies, University of Science and Technology,
+                    Zewali City, Giza, Egypt.
+                  </li>
+                  <li>
+                    Christine Yoshinaga-Itano, Allison L. Sedey , Craig A.
+                    Mason, Mallene Wiggin, Winnie Chung, “Early Intervention,
+                    Parent Talk, and Pragmatic Language in Children with Hearing
+                    Loss”, 01 November, 2020
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research__problemes_and_solution -->
+        <div id="research_objectives" class="sub-section">
+          <span class="sub-title">Research Objectives</span>
+          <div class="sub-description">
+            Following are the main research objectives achieved in the research.
+          </div>
+          <div class="obj-row">
+            <div class="obj-box">
+              <div class="obj-title">
+                <span class="obj-title-content content-start">
+                  Initial Status Determination and Progress Monitoring
+                </span>
+              </div>
+              <div class="obj-content">
+                The first objective is to detect the level of the child when
+                they start to use the application using a pre trained model
+                developed using Random Forest Algorithm and a dataset gathered
+                from hearing impaired children and then measuring the progress
+                of the child each time they visit the application
+              </div>
+            </div>
+
+            <div class="obj-box">
+              <div class="obj-content">
+                The second objective of this study is exploring objects in the
+                surrounding environment and teach the student in order to
+                develop their vocabulary
+              </div>
+              <div class="obj-title obj-end">
+                <span class="obj-title-content content-end">
+                  Object Exploration in Surrounding Environment
+                </span>
+              </div>
+            </div>
+
+            <div class="obj-box">
+              <div class="obj-title">
+                <span class="obj-title-content content-start">
+                  Contextually Similar Word Generation and Content Filteration
+                </span>
+              </div>
+              <div class="obj-content">
+                The third objective is to introduce new words to the child based
+                on other words they learn in the application in order to enhance
+                their vocabulary
+              </div>
+            </div>
+
+            <div class="obj-box">
+              <div class="obj-content">
+                The fourth objective is to detect the accuracy of the
+                pronounciation of the child using lip movement detection and
+                voice detection
+              </div>
+              <div class="obj-title obj-end">
+                <span class="obj-title-content content-end">
+                  Lips+voice assisted speech <br />
+                  therapy mechanism
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-section sub-section" id="methodology">
+          <span class="sub-title">Methodology</span>
+
+          <div class="meth-content-box">
+            <div class="meth-image">
+              <img
+                src="assets/overview system diagram.png"
+                alt="Overview System Diagram"
+              />
+            </div>
+            <div class="meth-para">
+              The proposed application solution has 4 main components. They are:
+
+              <ul class="meth-list">
+                <li>Initial Status Determination and Progress Monitoring</li>
+                <li>Object Exploration in Surrounding Environment</li>
+                <li>
+                  Contextually Similar Word Generation and Content Filteration
+                </li>
+                <li>Lips+voice assisted speech therapy mechanism</li>
+              </ul>
+
+              Fig 4 illustrates the overall system diagram of the proposed
+              solution which was intended to provide a smart approach for
+              stakeholders, researchers, and the contributors from CEHIC who
+              were working with us in collaboration. Using a mobile app with
+              gamified tasks and explorative learning this application proposes
+              a method which can improve language and cognitive abilities of a
+              hearing-impaired children who are recovering. It was observed that
+              all the models perform with performance with better than 84%
+              accuracy. The application should be used in the field for many
+              years to gather its real impact on the students. The research work
+              is done based on English language and further extension can be
+              taken to do the enhanced the visual learning to other languages.
+              Currently the models are compatible with mobile versions and
+              further enhancement related to increase the compatibility of
+              mobile phones can be done. The learning process is currently done
+              with the supervision of a teacher on premises. But further
+              improvements can be made to accommodate remote learning.
+            </div>
+          </div>
+        </div>
+        <div class="team-section sub-section" id="presentations">
+          <span class="sub-title">Presentations</span>
+
+          <div class="pre-main-content">
+            <div class="pre-box">
+              <a target="_blank"
+                href="https://www.canva.com/design/DAFPTh557zg/JulWqTo7wCHtlwMffK04Bw/edit?utm_content=DAFPTh557zg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                class="title"
+                >Proposal</a
+              >
+            </div>
+            <div class="pre-box">
+              <a target="_blank"
+                href="https://www.canva.com/design/DAFZD_fs3i4/Tc6WG7x2FKdj0Ti7SeyV4Q/edit?utm_content=DAFZD_fs3i4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                class="title"
+                >Progress Presentation 1</a
+              >
+            </div>
+            <div class="pre-box">
+              <a target="_blank"
+                href="https://www.canva.com/design/DAFeRd8lIQU/_kgHweZYdyP7M8hqT3EFAA/edit?utm_content=DAFeRd8lIQU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                class="title"
+                >Progress Presentation 2</a
+              >
+            </div>
+            <div class="pre-box">
+              <a target="_blank"
+                href="https://www.canva.com/design/DAFeRd8lIQU/_kgHweZYdyP7M8hqT3EFAA/edit?utm_content=DAFeRd8lIQU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                class="title"
+                >Final Presentation </a
+              >
+            </div>
+           
+          </div>
+        </div>
+        <div class="team-section sub-section" id="team">
+          <span class="sub-title">Our Team</span>
+
+          <div class="team-main-content">
+            <div class="team-box">
+              <div class="img">
+                <img src="team/Prof. Janaka Wijeekoon.png" alt="" />
+              </div>
+
+              <div class="title">Prof. Janaka Wijeekoon</div>
+              <div class="team-sub-title">Superviser</div>
+            </div>
+            <div class="team-box">
+              <div class="img">
+                <img src="team/Mr. Jagath Wickramaratna.png" alt="" />
+              </div>
+
+              <div class="title">Mr. Jagath Wickramaratna</div>
+              <div class="team-sub-title">Coverup Superviser</div>
+            </div>
+           
+            <div class="team-box">
+              <div class="img">
+                <img src="team/Mr. Samitha Vidhaanarachchi.png" alt="" />
+              </div>
+              <div class="title">Mr. Samitha Vidhaanarachchi</div>
+              <div class="team-sub-title">Co Superviser</div>
+            </div>
+
+            <div class="team-box">
+              <div class="img">
+                <img src="team/Rev. Sr. Greta Nalawatta.png" alt="" />
+              </div>
+              <div class="title">Rev. Sr. Greta Nalawatta</div>
+              <div class="team-sub-title">Foundress at CEHIC</div>
+            </div>
+
+            <div class="team-box">
+              <div class="img">
+                <img
+                  src="team/Students/BWEK Senarathna Data Science.png"
+                  alt=""
+                />
+              </div>
+              <div class="title">BWEK Senarathna</div>
+              <div class="team-sub-title">Data Science</div>
+            </div>
+
+            <div class="team-box">
+              <div class="img">
+                <img
+                  src="team/Students/LLPSM Lelkada Data Science.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="title">LLPSM Lelkada</div>
+              <div class="team-sub-title">Data Science</div>
+            </div>
+            <div class="team-box">
+              <div class="img">
+                <img src="team/Students/MMS Udbhasa Data Science.png" alt="" />
+              </div>
+
+              <div class="title">MMS Udbhasa</div>
+              <div class="team-sub-title">Data Science</div>
+            </div>
+            <div class="team-box">
+              <div class="img">
+                <img
+                  src="team/Students/PDMK Priyanka Software Engineering.jpeg"
+                  alt=""
+                />
+              </div>
+
+              <div class="title">PDMK Priyanka </div>
+              <div class="team-sub-title">Software Engineering</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research__problemes_and_solution -->
+      </section>
+    </section>
+  </body>
+</html>
