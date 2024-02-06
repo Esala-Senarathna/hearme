@@ -1,0 +1,18 @@
+<svg height="256" viewBox="0 0 1170 256" width="1170" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <linearGradient id="softBlueGreyGradient" gradientUnits="objectBoundingBox" x1=".506" x2=".5" y1="1.061">
+        <stop offset="0" stop-color="#f0f4f7"/>
+        <stop offset="1" stop-color="#cfd3d6"/>
+    </linearGradient>
+    <clipPath id="b">
+        <rect height="256" rx="29" transform="translate(0 .493)" width="1170"/>
+    </clipPath>
+    <rect fill="#e8ecef" height="256" rx="29" width="1170"/>
+    <g clip-path="url(#b)" transform="translate(0 -.493)">
+        <path d="M0,192 
+                 c290,0 290,-160 580,-160 
+                 c290,0 290,160 580,160 
+                 c20,0 10,64 0,64 
+                 H0 
+                 V192 Z" fill="url(#softBlueGreyGradient)"/>
+    </g>
+</svg>

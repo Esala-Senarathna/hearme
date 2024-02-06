@@ -1,112 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HearMe</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
-    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
-  </head>
-  <script src="index.js"></script>
+<html class="no-js" lang="">
 
-  <body>
-    <section class="navbar">
-      <nav id="navmenu" class="navbar__menu">
-        <div class="nav-img">
-          <img
-            src="assets/logo.png"
-            class="d-inline-block align-top"
-            loading="lazy"
-          />
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>HearMe</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <!-- Place favicon.ico in the root directory -->
 
-        <!-- <span>HearMe</span><br> -->
+  <!-- ======== CSS here ======== -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/lineicons.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
 
-        <div class="nav_links" id="navLinks">
-          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+<body>
+  <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
 
-          <ul>
-            <li><a href="">Home</a></li>
-
-            <li><a href="#literature-survey">Literature Survey</a></li>
-            <li><a href="#research_objectives">Research Objectives</a></li>
-            <li><a href="#methodology">Methodology</a></li>
-            <li><a href="#timeline">Timeline</a></li>
-            <li><a href="#technologies">Technologies</a></li>
-            <li><a href="#presentations">Downloads</a></li>
-            <li><a href="#team">Team</a></li>
-          </ul>
-        </div>
-        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-      </nav>
-      <!-- Home -->
-      <section id="home">
-        <div class="container">
-          <div class="hero-cta">
-            <h1>
-              Visual Based Learning Tool<br /> <br />for Hearing-Impaired Children
-            </h1>
-            <a class="btn btn-outline-light" type="button" href="https://play.google.com/store/apps/details?id=com.qube4apps.HearMe"
-              ><span class="btn-text">Download</span
-              ><span class="fas fa-chevron-right btn-icon"></span
-            ></a>
+  <!-- ======== preloader start ======== -->
+  <div class="preloader">
+    <div class="loader">
+      <div class="spinner">
+        <div class="spinner-container">
+          <div class="spinner-rotator">
+            <div class="spinner-left">
+              <div class="spinner-circle"></div>
+            </div>
+            <div class="spinner-right">
+              <div class="spinner-circle"></div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+  <!-- preloader end -->
 
-<!-- >>>>>Features<<<<<<  -->
-<section id="showcase">
-  <div class="content2">
+  <!-- ======== header start ======== -->
+  <header class="header">
+    <div class="navbar-area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="index.html">
+
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                <ul id="nav" class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="page-scroll active" href="#home">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#showcase">Features</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#demo">Video</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#background">Background</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#objectives">Objectives</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#methodology">Methodology</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#technology"> Technologies </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#presentation"> Pitch Deck </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#team"> Team </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- navbar collapse -->
+            </nav>
+            <!-- navbar -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- navbar area -->
+  </header>
+  <!-- ======== header end ======== -->
+
+  <!-- ======== hero-section start ======== -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center position-relative">
+        <div class="col-lg-6">
+          <div class="hero-content">
+            <br><br><br><br>
+            <h1 class="wow fadeInUp" data-wow-delay=".4s">
+              HearMe
+            </h1>
+            <br><br>
+            <h2 class="wow fadeInUp" data-wow-delay=".6s">
+              Visual Based Learning Tool for
+              Hearing-Impaired Children
+            </h2>
+
+
+           
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
+            <img src="assets/img/hero/hearmelogo.png" alt="" />
+          </div>
+        </div>
+        <br><br><br><br>
+      </div>
+    </div>
+  </section>
+  <!-- ======== hero-section end ======== -->
+
+
+  <section id="showcase">
+    <div class="container">
+    <div class="content2">
+
       <div class="text-slider">
-          <span id="slideshow-text" style="color: #040d47; line-height:140%; font-size: 40px;"></span>
+        <span id="slideshow-text" style="color: #040d47; line-height:140%; font-size: 40px;"></span>
       </div>
       <div class="image-slider">
-          <div id="phone-frame">
-              <img src="assets/placeholder.jpg" id="slideshow-image">
-          </div>
-          <img src="assets/circle.png" id="circle-image">
+        <div id="phone-frame">
+          <img src="assets/placeholder.jpg" id="slideshow-image">
+        </div>
+        <img src="assets/img/about/about-left-shape.svg" id="circle-image">
       </div>
-  </div>
-</section>
-<br><br>
-      
+    </div>
+    </div>
+  </section>
+  <br><br><br><br>
 
-      <!-- >>>>>Project scope<<<<<<  -->
+  <section id="demo">
 
-      <section id="Project_scope" class="main_section">
-        <div id="literature-survey" class="sub-section">
-          <span class="sub-title">Literature Survey</span>
-          <div class="survey-row">
-            <div class="survey-top">
-              <div class="section-figure">
-                <img
-                  src="assets/stat.jpg"
-                  style="width: 687px"
-                  alt="Hearing Impairemnet"
-                />
-                <figcaption>Hearing Loss in Children</figcaption>
-                <p></p>
-              </div>
-              <div class="survey-top-para">
+    <div class="container">
+      <br><br>
+      <div class="video-container">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/YF-GUlid4vU?autoplay=1&mute=1&loop=1&playlist=YF-GUlid4vU&controls=0&modestbranding=1&rel=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ======== background-section start ======== -->
+  <section id="background" class="about-section pt-150">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-6 col-lg-6">
+          <div class="about-img">
+            <img src="assets/img/stat.jpg" alt="" class="w-100" />
+            <img src="assets/img/about/about-left-shape.svg" alt="" class="shape shape-1" />
+            <br>
+            <p>Hearing Loss in Children</p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+          <div class="about-content">
+            <div class="section-title mb-30">
+              <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                Literature Survey
+              </h2>
+              <p class="wow fadeInUp" data-wow-delay=".4s">
                 According to the WHO, approximately 466 million people worldwide
                 have disabling hearing loss, which represents about 6.1% of the
                 world population. [1] Among those people, most of the people
@@ -116,7 +209,7 @@
                 an improved vocabulary. Vocabulary development is mostly
                 affected in between the age of 3 to 6 years. [2] Which is why a
                 customized tool for hearing impaired people who are recovering
-                is needed. <br />
+                is needed. <br /> <br />
                 The aim of this research is to develop a learning tool to
                 provide the ability to use visual based materials from the
                 surrounding environment to improve vocabulary in early ages.
@@ -134,130 +227,132 @@
                 involves with training lip movements for the alphabet and that
                 gives visual feedback while monitoring the mouth movements of
                 the child.
-              </div>
+              </p>
             </div>
-            <div id="project-scope-right" class="survey-bottom">
-              <div class="references">
-                <span class="ref-title">References</span>
-                <ol class="ref-list">
-                  <li>
-                    World Health Organization, “Deafness and Hearing Loss”,
-                    Available:
-                    https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss
-                  </li>
-                  <li>
-                    Doaa Shawky and Ashraf Badawi, “A reinforcement
-                    Learning-Based Adaptive Learning System”, Center for
-                    learning technologies, University of Science and Technology,
-                    Zewali City, Giza, Egypt.
-                  </li>
-                  <li>
-                    Christine Yoshinaga-Itano, Allison L. Sedey , Craig A.
-                    Mason, Mallene Wiggin, Winnie Chung, “Early Intervention,
-                    Parent Talk, and Pragmatic Language in Children with Hearing
-                    Loss”, 01 November, 2020
-                  </li>
-                </ol>
-              </div>
-            </div>
+
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <!-- ======== background-section end ======== -->
 
-        <!-- Research__problemes_and_solution -->
-        <div id="research_objectives" class="sub-section" style="margin-top: 3em;">
-          <span class="sub-title">Research Objectives</span>
-          <div class="sub-description">
-            Following are the main research objectives achieved in this research.
-          </div>
-          <div class="obj-row">
-            <div class="obj-box">
-              <div class="obj-title">
-                <span class="obj-title-content content-start">
-                  Initial Status Determination and Progress Monitoring
-                </span>
-              </div>
-              <div class="obj-content">
-                The first objective is to detect the level of the child when
+  <!-- ======== subscribe-section start ======== -->
+  <section id="objectives" class="subscribe-section pt-120">
+    <div class="container">
+      <div class="section-title text-center mb-60">
+        <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+          Objectives
+        </h1>
+
+      </div>
+      <br>
+      <!-- Row for the first two items -->
+      <div class="row">
+        <!-- First item -->
+        
+        <div class="col-lg-6 col-md-12 p-4">
+          <div class="subscribe-wrapper img-bg wow fadeInUp" data-wow-delay=".1s">
+            <div class="section-title mb-15 ">
+              <h3 class="text-white mb-25 wow fadeInUp" data-wow-delay=".2s">Initial Status Determination and Progress
+                Monitoring</h3>
+              <p class="text-white pr-5 wow fadeInUp" data-wow-delay=".4s">
+                Detect the level of the child when
                 they start to use the application using a pre trained model
                 developed using Random Forest Algorithm and a dataset gathered
                 from hearing impaired children and then measuring the progress
                 of the child each time they visit the application
-              </div>
+              </p>
             </div>
-
-            <div class="obj-box">
-              <div class="obj-content">
-                The second objective of this study is exploring objects in the
+          
+        </div>
+      </div>
+        <br><br>
+        <!-- Second item -->
+        <div class="col-lg-6 col-md-12 p-4">
+          <div class="subscribe-wrapper img-bg wow fadeInUp" data-wow-delay=".1s">
+            <div class="section-title mb-15">
+              <h3 class="text-white mb-25 wow fadeInUp" data-wow-delay=".2s">Object Exploration in Surrounding
+                Environment</h3>
+              <p class="text-white pr-5 wow fadeInUp" data-wow-delay=".4s">
+                Exploring objects in the
                 surrounding environment and teach the student in order to
                 develop their vocabulary
-              </div>
-              <div class="obj-title obj-end">
-                <span class="obj-title-content content-end">
-                  Object Exploration in Surrounding Environment
-                </span>
-              </div>
-            </div>
-
-            <div class="obj-box">
-              <div class="obj-title">
-                <span class="obj-title-content content-start">
-                  Contextually Similar Word Generation and Content Filteration
-                </span>
-              </div>
-              <div class="obj-content">
-                The third objective is to introduce new words to the child based
-                on other words they learn in the application in order to enhance
-                their vocabulary
-              </div>
-            </div>
-
-            <div class="obj-box">
-              <div class="obj-content">
-                The fourth objective is to detect the accuracy of the
-                pronounciation of the child using lip movement detection and
-                voice detection
-              </div>
-              <div class="obj-title obj-end">
-                <span class="obj-title-content content-end">
-                  Lips+voice assisted speech <br />
-                  therapy mechanism
-                </span>
-              </div>
+              </p>
             </div>
           </div>
         </div>
-
-        <div class="team-section sub-section" id="methodology">
-          <span class="sub-title">Methodology</span>
-
-          <div class="meth-content-box">
-            <div class="meth-image">
-              <a href="assets/overview system diagram.png" target="_blank">
-              <img
-                src="assets/overview system diagram.png"
-                alt="Overview System Diagram"
-                width="500"
-                onclick="window.open('assets/overview system diagram.png', '_blank');"
-              />
-            </a>
+      </div>
+      <br><br>
+      <!-- Row for the next two items -->
+      <div class="row">
+        <!-- Third item -->
+        
+        <div class="col-lg-6 col-md-12 p-4">
+          <div class="subscribe-wrapper img-bg wow fadeInUp" data-wow-delay=".1s">
+            <div class="section-title mb-15">
+              <h3 class="text-white mb-25 wow fadeInUp" data-wow-delay=".2s">Contextually Similar Word
+                Generation and Content Filtration</h3>
+              <p class="text-white pr-5 wow fadeInUp" data-wow-delay=".4s">
+                Introduce new words to the child based
+                on other words they learn in the application in order to enhance
+                their vocabulary
+              </p>
             </div>
-            <div class="meth-para">
-              The proposed application solution has 4 main components. They are,
-            </br>
-            </br>
+          
+        </div>
+      </div>
+        <br><br>
+        <!-- Fourth item -->
+        <div class="col-lg-6 col-md-12 p-4">
+          <div class="subscribe-wrapper img-bg wow fadeInUp" data-wow-delay=".1s">
+            <div class="section-title mb-15">
+              <h3 class="text-white mb-25 wow fadeInUp" data-wow-delay=".2s">Lips+voice assisted speech therapy
+                mechanism</h3>
+              <p class="text-white pr-5 wow fadeInUp" data-wow-delay=".4s">
+                Detect the accuracy of the
+                pronunciation of the child using lip movement detection and
+                voice detection
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
 
-              <ul class="meth-list">
-                <li>Initial Status Determination and Progress Monitoring</li>
-                <li>Object Exploration in Surrounding Environment</li>
-                <li>
-                  Contextually Similar Word Generation and Content Filteration
-                </li>
-                <li>Lips+voice assisted speech therapy mechanism</li>
-              </ul>
+    </div>
+  </section>
 
-            
-            </br>
+  <!-- ======== subscribe-section end ====== ======== -->
 
+
+
+
+  <!-- ======== about2-section start ======== -->
+  <section id="methodology" class="about-section pt-150">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-6 col-lg-6">
+          <div class="about-content">
+            <div class="section-title mb-30">
+              <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                Methodology
+              </h1>
+              <p class="wow fadeInUp" data-wow-delay=".4s">
+                The proposed application solution has 4 main components. They are,
+              </p>
+            </div>
+            <ul>
+              <li>Initial Status Determination and Progress Monitoring</li>
+              <li>Object Exploration in Surrounding Environment</li>
+              <li>
+                Contextually Similar Word Generation and Content Filteration
+              </li>
+              <li>Lips+voice assisted speech therapy mechanism</li>
+            </ul>
+
+            <p class="wow fadeInUp" data-wow-delay=".4s">
               Here illustrates the overall system diagram of the proposed
               solution which was intended to provide a smart approach for
               stakeholders, researchers, and the contributors from CEHIC who
@@ -275,403 +370,348 @@
               mobile phones can be done. The learning process is currently done
               with the supervision of a teacher on premises. But further
               improvements can be made to accommodate remote learning.
+            </p>
+
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 order-first order-lg-last">
+          <div class="about-img-2">
+            <img src="assets/img/sys_overview.png" alt="" class="w-100" />
+            <img src="assets/img/about/about-right-shape.svg" alt="" class="shape shape-1" />
+            ,
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======== about2-section end ======== -->
+
+ 
+
+
+  <!-- ======== tech-section start ======== -->
+  <section id="technology" class="feature-section pt-120">
+    <div class="container">
+      <div class="section-title text-center mb-60">
+        <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+          Technologies
+        </h1>
+
+      </div>
+      <div class="row justify-content-center">
+
+
+
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="single-feature">
+              <div class="tech-item">
+                <img src="assets/img/tech1.png" alt="Tech 1">
+              </div>
+              <div class="content">
+
+                <h3>Python</h3>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="single-feature">
+              <div class="tech-item">
+                <img src="assets/img/tech2.png" alt="Tech 1">
+              </div>
+              <div class="content">
+
+                <h3>React Native</h3>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="single-feature">
+              <div class="tech-item">
+                <img src="assets/img/tech3.png" alt="Tech 1">
+              </div>
+              <div class="content">
+
+                <h3>Unity</h3>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="single-feature">
+              <div class="tech-item">
+                <img src="assets/img/tech4.png" alt="Tech 1">
+              </div>
+              <div class="content">
+
+                <h3>TensorFlow</h3>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="single-feature">
+              <div class="tech-item">
+                <img src="assets/img/tech5.png" alt="Tech 1">
+              </div>
+              <div class="content">
+
+                <h3>MongoDB</h3>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="single-feature">
+              <div class="tech-item">
+                <img src="assets/img/tech6.png" alt="Tech 1">
+              </div>
+              <div class="content">
+
+                <h3>Azure</h3>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="single-feature">
+              <div class="tech-item">
+                <img src="assets/img/tech7.png" alt="Tech 1">
+              </div>
+              <div class="content">
+
+                <h3>Docker</h3>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="single-feature">
+              <div class="tech-item">
+                <img src="assets/img/tech8.png" alt="Tech 1">
+              </div>
+              <div class="content">
+
+                <h3>Colab</h3>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="single-feature">
+              <div class="tech-item">
+                <img src="assets/img/tech9.png" alt="Tech 1">
+              </div>
+              <div class="content">
+
+                <h3>Streamlit</h3>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="single-feature">
+              <div class="tech-item">
+                <img src="assets/img/tech10.png" alt="Tech 1">
+              </div>
+              <div class="content">
+
+                <h3>OpenCV</h3>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- ... other items ... -->
+        </div>
+
+
+
+
+
+
+
+      </div>
+    </div>
+    <br><br><br><br><br>
+  </section>
+  <!-- ======== tech-section end ======== -->
+
+  <section id="presentation">
+    <div class="container">
+      <div class="row">
+        <!-- Third item -->
+        <div class="col-md-8 col-sm-12">
+          <div class="presentation-div wow fadeInUp" data-wow-delay=".1s">
+            <img src="assets/img/kid.png" alt="Kid Image">
+          </div>
+        </div>
+        <!-- Fourth item -->
+        <div class="col-md-4 col-sm-12">
+          <div class="presentation-div fadeInUp" data-wow-delay=".1s">
+            <div class="button-container">
+              <button class="svg-button" onclick="location.href='https://drive.google.com/file/d/19ECnCKyqoH23MGdU9FHuvPbABVIgew5Q/view'">
+                <h4>Pitch Deck</h4>
+              </button>
             </div>
           </div>
         </div>
-
-<!-- >>>>>Timeline<<<<<<  -->
-<div id="timeline" class="sub-section">
-  <span class="sub-title">Timeline</span>
-  <div id="timeline-embed" style="width: 91%; margin: auto; height: 490px; margin-top: 40px; margin-bottom: 3em;"></div>
-</div>
-
-<!-- >>>>>Technologies<<<<<<  -->
-<div class="team-section sub-section" id="technologies">
-<section id="technologies">
-  <span class="sub-title">Technologies</span>
-  <br><br><br>
-  <div class="tech-grid">
-    
-      <div class="tech-item">
-          <img src="assets/tech1.png" alt="Tech 1">
-          <p>Python</p>
       </div>
-      <div class="tech-item">
-          <img src="assets/tech2.png" alt="Tech 2">
-          <p>React Native</p>
-      </div>
-      <div class="tech-item">
-          <img src="assets/tech3.png" alt="Tech 3">
-          <p>Unity</p>
-      </div>
-      <div class="tech-item">
-          <img src="assets/tech4.png" alt="Tech 4">
-          <p>Tensorflow</p>
-      </div>
-      <div class="tech-item">
-          <img src="assets/tech5.png" alt="Tech 5">
-          <p>MongoDB</p>
-      </div>
-      <div class="tech-item">
-          <img src="assets/tech6.png" alt="Tech 6">
-          <p>Azure</p>
-      </div>
-      <div class="tech-item">
-          <img src="assets/tech7.png" alt="Tech 7">
-          <p>Docker</p>
-      </div>
-      <div class="tech-item">
-        <img src="assets/tech8.png" alt="Tech 5">
-        <p>Colab</p>
     </div>
-    <div class="tech-item">
-        <img src="assets/tech9.png" alt="Tech 6">
-        <p>Streamlit</p>
-    </div>
-    <div class="tech-item">
-        <img src="assets/tech10.png" alt="Tech 7">
-        <p>OpenCV</p>
-    </div>
-  </div>
-</section>
-</div>
+  </section>
+  
 
-        <div class="team-section sub-section" id="presentations">
-          <span class="sub-title">Presentations</span>
+<br><br><br><br>
 
-          <div class="pre-main-content">
-            <div class="pre-box">
-              <a target="_blank"
-                href="https://drive.google.com/file/d/1uaRL7AGlsfX6tvKfuHN_VVaxNgg8H1dT/view?usp=sharing"
-                class="title"
-                >Proposal Presentation</a
-              >
-            </div>
-            <div class="pre-box">
-              <a target="_blank"
-                href="https://drive.google.com/file/d/1n1ZMVNTusIgb1wSYW7zvEl7PORtfFgwm/view?usp=sharing"
-                class="title"
-                >Progress Presentation 1</a
-              >
-            </div>
-            <div class="pre-box">
-              <a target="_blank"
-                href="https://drive.google.com/file/d/1pd5cobuJUHCQqYaRLr63KSmNYB0MoxuC/view?usp=sharing"
-                class="title"
-                >Progress Presentation 2</a
-              >
-            </div>
-            <div class="pre-box">
-              <a target="_blank"
-                href="https://drive.google.com/file/d/19ECnCKyqoH23MGdU9FHuvPbABVIgew5Q/view?usp=sharing"
-                class="title"
-                >Final Presentation </a
-              >
-            </div>
-           
-          </div>
-        </div>
+  <section class="team">
+    <div class="container">
+      <div class="team-section sub-section" id="team">
 
-        <div class="team-section sub-section" id="presentations">
-          <span class="sub-title">Documents</span>
-
-          <div class="pre-main-content">
-            <div class="pre-box">
-              <a target="_blank"
-                href="https://drive.google.com/file/d/1PuGdtbwcCA-C-iygS4DAYUwtbJ-p4-zo/view?usp=sharing"
-                class="title"
-                >Topic Assessment</a
-              >
-            </div>
-            <div class="pre-box">
-              <a target="_blank"
-                href="https://drive.google.com/file/d/1tdHEoOtMdzwE_8rPZ0BXEy315802d-zE/view?usp=sharing"
-                class="title"
-                >Project Charter</a
-              >
-            </div>
-            <div class="pre-box">
-              <a target="_blank"
-                href="https://drive.google.com/drive/folders/19ckvmjknz9ylynE-Gwsg7obdNnabrH5_?usp=sharing"
-                class="title"
-                >Project Proposal</a
-              >
-            </div>
-            <div class="pre-box">
-              <a target="_blank"
-                href="https://drive.google.com/drive/folders/1edJ1IS2uCX8k1-IDGiKXmFyY4tyBacI3?usp=sharing"
-                class="title"
-                >Status Document I</a
-              >
-            </div>
-            <div class="pre-box">
-              <a target="_blank"
-                href="https://drive.google.com/drive/folders/1abAwlbZPUCa4f91DVPMEH7WH8t8K34Mn?usp=sharing"
-                class="title"
-                >Status Document II</a
-              >
-            </div>
-            <div class="pre-box">
-              <a target="_blank"
-                href="https://drive.google.com/file/d/1-p_-JeQ5zBEnj4k2Lq-iPUmC5Z8PFBvx/view?usp=sharing"
-                class="title"
-                >Research Paper</a
-              >
-            </div>
-           
-            <div class="pre-box">
-              <a target="_blank"
-                href="https://drive.google.com/drive/folders/1C0hsBjnvfUYJgVdPmyKJIptXlzBL6lu9?usp=sharing"
-                class="title"
-                >Final Report </a
-              >
-            </div>
-
-            <div class="pre-box">
-              <a target="_blank"
-                href="https://drive.google.com/file/d/1JSRQ79bCfjWaeCuShEK0_AfY0cvA7dDZ/view?usp=sharing"
-                class="title"
-                >Poster</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="team-section sub-section" id="team">
-          <span class="sub-title">Our Team</span>
-
-          <div class="team-main-content">
+        <H1>Our Team</h1>
+        <br><br>
+        <div class="row">
+          <!-- Team Member 2 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="team-box">
               <div class="img">
-                <img src="team/Prof. Janaka Wijeekoon.png" alt="" />
+                <img src="assets/team/Students/MMS Udbhasa Data Science.png" alt="" />
               </div>
+              <br>
+              <h4>Saluka Udbhasa</h4>
+            </div>
+          </div>
 
-              <div class="title">Prof. Janaka Wijeekoon</div>
+          <!-- Team Member 1 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="team-box">
+              <div class="img">
+                <img src="assets/team/Students/LLPSM Lelkada Data Science.png" alt="" />
+              </div>
+              <br>
+              <h4>Parami Lelkada</h4>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="team-box">
+              <div class="img">
+                <img src="assets/team/Students/PDMK Priyanka Software Engineering.jpeg" alt="" />
+              </div><br>
+              <h4>Modeesha Kalani</h4>
+            </div>
+          </div>
+          <!-- Team Member 4 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="team-box">
+              <div class="img">
+                <img src="assets/team/Prof. Janaka Wijeekoon.png" alt="" />
+              </div><br>
+              <h4>Prof. Janaka Wijeekoon</h4>
               <div class="team-sub-title">Supervisor</div>
             </div>
+          </div>
+          <!-- Team Member 5 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="team-box">
               <div class="img">
-                <img src="team/Mr. Jagath Wickramaratna.png" alt="" />
-              </div>
-
-              <div class="title">Mr. Jagath Wickramaratne</div>
+                <img src="assets/team/Mr. Jagath Wickramaratna.png" alt="" />
+              </div><br>
+              <h4>Mr. Jagath Wickramaratne</h4>
               <div class="team-sub-title">Cover-up Supervisor</div>
             </div>
-           
+          </div>
+          <!-- Team Member 6 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="team-box">
               <div class="img">
-                <img src="team/Mr. Samitha Vidhaanarachchi.png" alt="" />
-              </div>
-              <div class="title">Mr. Samitha Vidhanaarachchi</div>
+                <img src="assets/team/Mr. Samitha Vidhaanarachchi.png" alt="" />
+              </div><br>
+              <h4>Mr. Samitha Vidhanaarachchi</h4>
               <div class="team-sub-title">Co-Supervisor</div>
-            </div>
-
-            <div class="team-box">
-              <div class="img">
-                <img src="team/Rev. Sr. Greta Nalawatta.png" alt="" />
-              </div>
-              <div class="title">Rev. Sr. Greta Nalawatta</div>
-              <div class="team-sub-title">Foundress at CEHIC</div>
-            </div>
-
-            <div class="team-box">
-              <div class="img">
-                <img
-                  src="team/Students/BWEK Senarathna Data Science.png"
-                  alt=""
-                />
-              </div>
-              <div class="title">B W E K Senarathna</div>
-              <div class="team-sub-title">Data Science</div>
-            </div>
-
-            <div class="team-box">
-              <div class="img">
-                <img
-                  src="team/Students/LLPSM Lelkada Data Science.png"
-                  alt=""
-                />
-              </div>
-
-              <div class="title">L L P S M Lelkada</div>
-              <div class="team-sub-title">Data Science</div>
-            </div>
-            <div class="team-box">
-              <div class="img">
-                <img src="team/Students/MMS Udbhasa Data Science.png" alt="" />
-              </div>
-
-              <div class="title">M M S Udbhasa</div>
-              <div class="team-sub-title">Data Science</div>
-            </div>
-            <div class="team-box">
-              <div class="img">
-                <img
-                  src="team/Students/PDMK Priyanka Software Engineering.jpeg"
-                  alt=""
-                />
-              </div>
-
-              <div class="title">P D M K Priyanka </div>
-              <div class="team-sub-title">Software Engineering</div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="team-section sub-section">
-          <div class="content">
-            <div class="contact-form">
-                <h2>Contact Us</h2>
-                <form action="process_form.php" method="POST">
-                    <div class="input-group">
-                        <input type="text" name="name" placeholder="Your Name" required />
-                        <input type="email" name="email" placeholder="Your Email" required />
-                    </div>
-                    <textarea name="message" placeholder="Your Message"  cols="60" rows="4" required></textarea>
-                  </br>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-            <div class="app-download">
-                <p>Download HearMe mobile application</p>
-                <a href="https://play.google.com/store/apps/details?id=com.qube4apps.HearMe" class="app-download-button" target="_blank" rel="noopener noreferrer"></a>
-            </div>
-        </div>
-        
-        </div>
 
-        <!-- Research__problemes_and_solution -->
-      </section>
-    </section>
-  </body>
+  <!-- ======== footer start ======== -->
   <footer class="footer">
-    <p>&copy; 2023 HearMe™. All rights reserved</p>
+    <div class="container">
+      <div class="widget-wrapper">
+        <div class="row">
+          <!-- Logo Section -->
+          <div class="col-lg-4">
+            <div class="footer-widget">
+              <div class="logo mb-30">
+                <a href="index.html">
+                  <img class="footer-logo" src="assets/img/logo.svg" alt="Logo" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Section -->
+          <div class="col-lg-4">
+            <div class="footer-widget">
+              <div class="content">
+                <div class="contact-form">
+                  <h2>Contact Us</h2>
+                  <br><br>
+                  <form action="process_form.php" method="POST">
+                    <div class="input-group">
+                      <input type="text" name="name" class="form-input" placeholder="Your Name" required />
+                      <input type="email" name="email" class="form-input" placeholder="Your Email" required />
+                    </div>
+                    <textarea name="message" class="form-textarea" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="form-submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- App Download Section -->
+          <div class="col-lg-4">
+            <div class="footer-widget">
+              <div class="app-download">
+              
+                <a href="https://play.google.com/store/apps/details?id=com.qube4apps.HearMe" class="app-download-button"
+                  target="_blank" rel="noopener noreferrer"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <!-- ======== footer end ======== -->
+
+  <!-- ======== scroll-top ======== -->
+  <a href="#" class="scroll-top btn-hover">
+    <i class="lni lni-chevron-up"></i>
+  </a>
+
+  <!-- ======== JS here ======== -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
-
-
-
-<script type="text/javascript">
-  var timeline_json = {
-    "title": {
-      "text": {
-        "headline": "Project Timeline",
-        "text": "Tap the side buttons to navigate"
-      },
-      "background": { "color": "#008080" }  // Teal color for title
-    },
-    "events": [
-      {
-        "start_date": {
-          "year": "2022",
-          "month": "10",
-          "day": "17"
-        },
-        "text": {
-          "headline": "Project Proposal",
-          "text": ""
-        },
-        "background": { "color": "#ff6347" } // Tomato color
-      },
-      {
-        "start_date": {
-          "year": "2022",
-          "month": "11",
-          "day": "03"
-        },
-        "text": {
-          "headline": "Visit to CEHIC (Data Gathering)",
-          "text": ""
-        },
-        "background": { "color": "#ffd700" } // Gold color
-      },
-      {
-        "start_date": {
-          "year": "2023",
-          "month": "2",
-          "day": "03"
-        },
-        "text": {
-          "headline": "Progress Presentation I",
-          "text": ""
-        },
-        "background": { "color": "#228b22" } // Forest green color
-      },
-      {
-        "start_date": {
-          "year": "2023",
-          "month": "4",
-          "day": "17"
-        },
-        "text": {
-          "headline": "Progress Presentation II",
-          "text": ""
-        },
-        "background": { "color": "#8b008b" } // Dark magenta color
-      },
-      {
-        "start_date": {
-          "year": "2023",
-          "month": "5",
-          "day": "01"
-        },
-        "text": {
-          "headline": "Research Paper",
-          "text": ""
-        },
-        "background": { "color": "#1e90ff" } // Dodger blue color
-      },
-      {
-        "start_date": {
-          "year": "2023",
-          "month": "5",
-          "day": "12"
-        },
-        "text": {
-          "headline": "Logbook",
-          "text": ""
-        },
-        "background": { "color": "#daa520" } // Golden rod color
-      },
-      {
-        "start_date": {
-          "year": "2023",
-          "month": "5",
-          "day": "15"
-        },
-        "text": {
-          "headline": "Final Report",
-          "text": ""
-        },
-        "background": { "color": "#a52a2a" } // Brown color
-      },
-      {
-        "start_date": {
-          "year": "2023",
-          "month": "5",
-          "day": "17"
-        },
-        "text": {
-          "headline": "Final Presentation & Viva",
-          "text": ""
-        },
-        "background": { "color": "#20b2aa" } // Light sea green color
-      },
-      {
-        "start_date": {
-          "year": "2023",
-          "month": "5",
-          "day": "25"
-        },
-        "text": {
-          "headline": "Website Assessment",
-          "text": ""
-        },
-        "background": { "color": "#708090" } // Slate gray color
-      }
-    ]
-  };
-
-  // two arguments: the id of the Timeline container (no '#'), and the JSON object or an instance of TL.TimelineConfig created from a suitable JSON object
-  window.timeline = new TL.Timeline('timeline-embed', timeline_json);
-</script>
