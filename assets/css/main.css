@@ -1559,6 +1559,17 @@ p {
  
 }
 
+.image-button {
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.image-button img {
+  display: block; /* Removes bottom space/margin under the image */
+  width: 200px; /* Adjust based on your image size */
+  height: auto; /* Keeps the aspect ratio of the image */
+}
 .card{
   margin-bottom: 30px;
 }
